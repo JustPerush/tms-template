@@ -7,39 +7,39 @@
   <link href='./styles/styles.css' rel="stylesheet">
   <title>TMS Markup</title>
 </head>
-<body>
-<header>
-  <h1></h1>
-  <h2>Statistics</h2>
-  <label><input type="search" value="Search"></label>
-  <!--Здесь должен быть значок с оповещением-->
-  <div>
-    <span>Name</span>
-    <img src="./img/Avatar.jpg" alt="Your Avatar">
+<body class="body-background">
+  <div class="grid-container">
+    <aside>
+      <img src="./img/vk-logo.svg" alt="Vk logo">
+      <nav>
+        <a href="#"><img src="./img/home-button.svg" alt="Home"></a>
+        <a href="#"><img src="./img/news-button.svg" alt="News"></a>
+        <a href="#"><img src="./img/friend-button.svg" alt="Friends"></a>
+        <a href="#"><img src="./img/messages-button.svg" alt="Messages"></a>
+        <a href="#"><img src="./img/music-button.svg" alt="Music"></a>
+        <a href="#"><img src="./img/statistics-button.svg" alt="Statistics"></a><a href="#"><img src="./img/settings-button.svg" alt="Settings"></a>
+      </nav>
+    </aside>
+    <main>
+        <header>
+          <h1>Statistics</h1>
+          <label><input type="search" value="Search"></label>
+
+          <div>
+            <span>Name</span>
+            <button><img src="./img/Avatar.jpg" alt="Your Avatar"></button>
+          </div>
+        </header>
+        <article class="card">
+          <h2 class="card__title">Title</h2>
+          <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Animi corporis cupiditate delectus ducimus enim eos e
+          veniet id maxime molestiae nihil porro quibusdam, quod, reiciendis rem sit sunt, tenetur vitae voluptates?
+          </p>
+          <button class="card__button">Button</button>
+          <a href="#" class="card__link">link</a>
+        </article>
+    </main>
   </div>
-</header>
-<aside>
-  <img src="./img/vk-logo.svg" alt="Vk logo">
-  <nav>
-    <a href="#"><img src="./img/home-button.svg" alt="Home"></a>
-    <a href="#"><img src="./img/news-button.svg" alt="News"></a>
-    <a href="#"><img src="./img/friend-button.svg" alt="Friends"></a>
-    <a href="#"><img src="./img/messages-button.svg" alt="Messages"></a>
-    <a href="#"><img src="./img/music-button.svg" alt="Music"></a>
-    <a href="#"><img src="./img/statistics-button.svg" alt="Statistics"></a>
-    <a href="#"><img src="./img/settings-button.svg" alt="Settings"></a>
-  </nav>
-</aside>
-
-
-  <article class="card">
-    <h2 class="card__title">Title</h2>
-    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Animi corporis cupiditate delectus ducimus enim eos e
-      veniet id maxime molestiae nihil porro quibusdam, quod, reiciendis rem sit sunt, tenetur vitae voluptates?
-    </p>
-    <button class="card__button">Button</button>
-    <a href="#" class="card__link">link</a>
-  </article>
 </body>
 </html>
