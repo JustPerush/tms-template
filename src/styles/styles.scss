@@ -8,7 +8,45 @@
 @import './components/global.scss';
 @import './components/body-background';
 @import './components/card.scss';
+@import './components/toggle.scss';
+@import './components/page-main.scss';
+@import './components/aside-menu.scss';
 
 // Fonts
 
 @import './components/fonts.scss';
+
+
+
+
+/*.checkbox{
+  line-height: 1.19;
+  color: #4F4F4F;
+}
+
+.checkbox__input{
+display: none;
+}
+
+.checkbox__mark{
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid #7F7FD5;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.checkbox__input:checked + .checkbox__mark::before{
+  content: '';
+  display: block;
+  position:absolute;
+  top:50%;
+  left: 50%;
+  width: 6px;
+  height: 10px;
+  border-bottom: 1.5px solid  #7F7FD5;
+  border-right: 1.5px solid  #7F7FD5;
+  transform: translate(-50%, -50%) rotate(45deg) skew(30deg);
+}*/

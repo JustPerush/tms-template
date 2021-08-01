@@ -1,0 +1,10 @@
+/*__________________MAIN PAGE MARKUP__________________*/
+
+.page {
+  display: grid;
+  grid-template-columns: 98px 1fr;
+  grid-template-rows: 1fr;
+  border: 1px solid #EBEBEB;
+  border-radius: 14px;
+  min-height: 100%;
+}

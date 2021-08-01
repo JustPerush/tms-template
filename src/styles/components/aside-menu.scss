@@ -1,0 +1,41 @@
+/*__________________ASIDE MENU__________________*/
+
+.page__menu{
+  display: block;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  border-right: 1px solid #EBEBEB;
+  border-radius: 14px 0 0 14px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px 0;
+  height: 100%;
+}
+.menu__logo{
+  display: block;
+  width: 50px;
+  height: 35px;
+}
+
+
+.menu__navigation{
+  display: flex;
+  width: 25px;
+  height: 280px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.menu__navigation > a img{
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+}

@@ -8,38 +8,83 @@
   <title>TMS Markup</title>
 </head>
 <body class="body-background">
-  <div class="grid-container">
-    <aside>
-      <img src="./img/vk-logo.svg" alt="Vk logo">
-      <nav>
-        <a href="#"><img src="./img/home-button.svg" alt="Home"></a>
-        <a href="#"><img src="./img/news-button.svg" alt="News"></a>
-        <a href="#"><img src="./img/friend-button.svg" alt="Friends"></a>
-        <a href="#"><img src="./img/messages-button.svg" alt="Messages"></a>
-        <a href="#"><img src="./img/music-button.svg" alt="Music"></a>
-        <a href="#"><img src="./img/statistics-button.svg" alt="Statistics"></a><a href="#"><img src="./img/settings-button.svg" alt="Settings"></a>
-      </nav>
+  <div class="page">
+    <aside class="page__menu">
+      <div class="menu">
+        <img src="./img/vk-logo.svg" class="menu__logo" alt="Vk logo">
+        <nav class="menu__navigation">
+          <a href="#"><img src="./img/home-button.svg" alt="Home"></a>
+          <a href="#"><img src="./img/news-button.svg" alt="News"></a>
+          <a href="#"><img src="./img/friend-button.svg" alt="Friends"></a>
+          <a href="#"><img src="./img/messages-button.svg" alt="Messages"></a>
+          <a href="#"><img src="./img/music-button.svg" alt="Music"></a>
+          <a href="#"><img src="./img/statistics-button.svg" alt="Statistics"></a><a href="#"><img src="./img/settings-button.svg" alt="Settings"></a>
+        </nav>
+        <label class="toggle">
+          <input type="checkbox" class="toggle__input">
+          <span class="toggle__mark"></span>
+        </label>
+      </div>
     </aside>
-    <main>
-        <header>
-          <h1>Statistics</h1>
-          <label><input type="search" value="Search"></label>
-
-          <div>
-            <span>Name</span>
-            <button><img src="./img/Avatar.jpg" alt="Your Avatar"></button>
+    <main class="page__main main">
+      <div class="main__grid grid">  <!--Вот здесь главный грид-контейнер, в котором
+                                         я хочу произвести разделение главной странички
+                                         на строки (4 строки - хедер, и три строки, содержащие
+                                         карточки)-->
+        <!--Хотелось бы на занятии снова затронуть тему БЭМ'а на примере нашего второго макета-->
+        <header class="grid__header header">
+          <h1 class="header__heading">Statistics</h1>
+          <label class="header__search"><input type="search" value="Search"></label>
+          <div class="header__person person">
+            <span class="person__name">Name</span>
+            <button class="person__avatar"><img src="./img/Avatar.jpg" alt="Your Avatar"></button>
           </div>
         </header>
-        <article class="card">
-          <h2 class="card__title">Title</h2>
-          <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Animi corporis cupiditate delectus ducimus enim eos e
-          veniet id maxime molestiae nihil porro quibusdam, quod, reiciendis rem sit sunt, tenetur vitae voluptates?
-          </p>
-          <button class="card__button">Button</button>
-          <a href="#" class="card__link">link</a>
-        </article>
+        <div class="grid__article ">  <!--Строки с карточками, в свою очередь,
+                                          я уже планирую разделять на столбцы-->
+          <article class="main__article friends">
+            <h2>Friends</h2>
+          </article>
+          <article class="main__article unique">
+            <h2>Unique visitors</h2>
+          </article>
+          <article class="main__article">
+            <h2></h2>
+          </article>
+        </div>
+        <div>
+          <article class="main__article">
+            <h2></h2>
+          </article>
+          <article class="main__article">
+            <h2></h2>
+          </article>
+        </div>
+        <div>
+          <article class="main__article">
+            <h2></h2>
+          </article>
+          <article class="main__article">
+            <h2></h2>
+          </article>
+        </div>
+      </div>
     </main>
   </div>
 </body>
 </html>
+
+
+<!--        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input">
+          <span class="checkbox__mark" aria-hidden="true"></span>
+          Checkbox
+        </label>
+      </div>
+      <div>
+        <select name="" id="">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+-->
