@@ -1,3 +1,5 @@
+@import '../fonts/fontello/css/fontello.css';
+
 // Utils
 
 @import './utils/variables.scss';
@@ -17,6 +19,31 @@
 @import './components/fonts.scss';
 
 
+.main{
+  background-color: #EFF3F9;
+  padding: 45px;
+  .grid{
+    display: grid;
+  }
+}
+
+
+
+.menu__icon{
+
+  color: #DFE6F1;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.act{
+  color:#7F7FD5;
+}
+
+
+.menu__icon:hover{
+  color:#7F7FD5;
+}
 
 
 /*.checkbox{

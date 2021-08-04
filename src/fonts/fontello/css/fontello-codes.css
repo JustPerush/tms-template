@@ -1,0 +1,6 @@
+
+.icon-home-button:before { content: '\e800'; } /* '' */
+.icon-news-button:before { content: '\e801'; } /* '' */
+.icon-settings-button:before { content: '\e802'; } /* '' */
+.icon-statistics-button:before { content: '\e803'; } /* '' */
+.icon-messages-button:before { content: '\e804'; } /* '' */
