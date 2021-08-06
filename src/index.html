@@ -38,13 +38,20 @@
         <!--Хотелось бы на занятии снова затронуть тему БЭМ'а на примере нашего второго макета-->
         <header class="grid__header header">
           <h1 class="header__heading">Statistics</h1>
-          <label class="header__search"><input type="search" value="Search"></label>
+          <label class="header__search">
+            <img src="./img/found-img.svg" alt="Found Image">
+            <input type="search" placeholder="Search" class="header__input">
+          </label>
           <div class="header__person person">
             <span class="person__name">Name</span>
-            <button class="person__avatar"><img src="./img/Avatar.jpg" alt="Your Avatar"></button>
+            <div class="person__avatar">
+              <img src="./img/Avatar.jpg" alt="Your Avatar" class="person__avatar image">
+              <img src="./img/avatar-after.jpg" alt="">
+            </div>
           </div>
         </header>
-          <article class="main__article friends">
+        <div class="grid__row row-2">
+          <article class="article friends">
             <h2>Friends</h2>
             <div class="dropdown">
               <img src="./img/dropboxPNG.png" alt="Dropbox">
@@ -57,7 +64,7 @@
             <span>271 people</span>
             <span>+0,7%</span>
           </article>
-          <article class="main__article unique">
+          <article class="article unique">
             <h2>Unique visitors</h2>
             <div class="dropdown">
               <img src="./img/dropboxPNG.png" alt="Dropbox">
@@ -70,7 +77,7 @@
             <span>69 people</span>
             <span>-1,7%</span>
           </article>
-          <article class="main__article followers">
+          <article class="article followers">
             <h2>Followers</h2>
             <div class="dropdown">
               <img src="./img/dropboxPNG.png" alt="Dropbox">
@@ -83,8 +90,9 @@
             <span>288 people</span>
             <span>+1%</span>
           </article>
-
-          <article class="main__article audience">
+        </div>
+        <div class="grid__row row-3">
+          <article class="article audience">
             <h2>Audience reach</h2>
             <div>
               <div>
@@ -105,7 +113,7 @@
             </div>
             <img src="./img/graphPNG.png" alt="Graph of attendance">
           </article>
-          <article class="main__article devices">
+          <article class="article devices">
             <h2>Reach by device</h2>
             <div>
               <img src="./img/diagramPNG.png" alt="Diagram">
@@ -113,14 +121,15 @@
               <span>Mobile devices</span>
             </div>
           </article>
-
-          <article class="main__article gender">
+        </div>
+        <div class="grid__row row-4">
+          <article class="article gender">
             <h2>Gender / Age</h2>
             <span>women</span>
             <span>men</span>
             <img src="./img/Group%20126.png" alt="Gender graph">
           </article>
-          <article class="main__article geo">
+          <article class="article geo">
             <h2>Geo</h2>
             <label>
               <input type="radio" class="" name="geo">
@@ -132,6 +141,7 @@
             </label>
             <img src="./img/countryPNG.png" alt="Geo graph">
           </article>
+        </div>
       </div>
     </main>
   </div>
