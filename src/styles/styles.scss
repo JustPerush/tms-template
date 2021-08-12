@@ -13,6 +13,7 @@
 @import './components/toggle.scss';
 @import './components/page-main.scss';
 @import './components/aside-menu.scss';
+@import './components/dropdown.scss';
 
 // Fonts
 
@@ -20,12 +21,14 @@
 
 
 h1{
+  margin: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
 }
 
 h2{
+  margin: 0;
   font-size: 20px;
   font-weight: 700;
 }
@@ -41,7 +44,7 @@ h2{
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template-rows: 10% 25% 32.5% 32.5%;
+  grid-template-rows: 10% 25% 1fr 1fr;
   grid-row-gap: 32px;
   .header{
     display: flex;
@@ -87,7 +90,6 @@ h2{
         cursor: pointer;
       }
     }
-
   }
 }
 
@@ -98,7 +100,7 @@ h2{
 }
 
 .article {
- /* margin:16px;*/
+  padding: 24px;
   background-color: #FDFDFF;
   border: 1px solid #EBEBEB;
   border-radius: 13px;
@@ -118,32 +120,45 @@ h2{
 
 
 .friends{
-
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .unique{
-
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .followers{
-
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
+.container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
 
 .menu__icon{
-
   color: #DFE6F1;
   font-size: 25px;
   text-decoration: none;
+  margin-bottom: 40px
 }
 
 .act{
   color:#7F7FD5;
 }
 
-
 .menu__icon:hover{
   color:#7F7FD5;
 }
+
+
+
 
 
 /*.checkbox{
