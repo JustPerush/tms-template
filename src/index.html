@@ -43,7 +43,7 @@
             <input type="search" placeholder="Search" class="header__input">
           </label>
           <div class="header__person person">
-            <span class="person__name">Name</span>
+            <span class="person__name">Anya</span>
             <div class="person__avatar">
               <img src="./img/Avatar.jpg" alt="Your Avatar" class="person__avatar image">
               <img src="./img/avatar-after.jpg" alt="">
@@ -65,7 +65,7 @@
             </div>
             <div class="container">
               <span>271 people</span>
-              <span>+0,7%</span>
+              <span class="stat">+0,7%</span>
             </div>
           </article>
           <article class="article unique">
@@ -82,7 +82,7 @@
             </div>
             <div class="container">
               <span>69 people</span>
-              <span>-1,7%</span>
+              <span class="stat stat--down">-1,7%</span>
             </div>
           </article>
           <article class="article followers">
@@ -99,14 +99,14 @@
             </div>
             <div class="container">
               <span>288 people</span>
-              <span>+1%</span>
+              <span class="stat">+1%</span>
             </div>
           </article>
         </div>
         <div class="grid__row row-3">
           <article class="article audience">
-            <h2>Audience reach</h2>
-            <div>
+            <div class="container">
+              <h2>Audience reach</h2>
               <div>
                 <select name="date" id="" class="date-selection">
                   <option value="1">31/01/2020 – 06/02/2020</option>
@@ -114,49 +114,61 @@
                   <option value="3">31/01/2020 – 06/02/2020</option>
                 </select>
               </div>
-              <label for="" class="checkbox">
-                <input type="checkbox" class="checkbox__input">
-                <span class="checkbox__mark" aria-hidden="true"></span>
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" checked>
+                <span class="checkbox__mark"></span>
+                Total
               </label>
-              <label for="" class="checkbox">
-                <input type="checkbox" class="checkbox__input">
-                <span class="checkbox__mark" aria-hidden="true"></span>
-              </label>
+
+              <input type="checkbox" class="checkbox-alt" id="label1">
+              <label for="label1" class="checkbox-alt-label">Followers</label>
             </div>
             <img src="./img/graphPNG.png" alt="Graph of attendance">
           </article>
           <article class="article devices">
             <h2>Reach by device</h2>
-            <div>
+            <div class="devices__container">
               <img src="./img/diagramPNG.png" alt="Diagram">
-              <span>Desktop</span>
-              <span>Mobile devices</span>
+              <div class="devices__container--flex">
+                <span>Desktop</span>
+                <span class="color">Mobile devices</span>
+              </div>
             </div>
           </article>
         </div>
         <div class="grid__row row-4">
           <article class="article gender">
-            <h2>Gender / Age</h2>
-            <span>women</span>
-            <span>men</span>
+            <div class="container">
+              <h2>Gender / Age</h2>
+              <div class="gender__container">
+                <span>women</span>
+                <span class="color">men</span>
+              </div>
+            </div>
             <img src="./img/Group%20126.png" alt="Gender graph">
           </article>
           <article class="article geo">
-            <h2>Geo</h2>
-            <label>
-              <input type="radio" class="" name="geo">
-              Country
-            </label>
-            <label>
-              <input type="radio" class="" name="geo">
-              City
-            </label>
+            <div class="container">
+              <h2>Geo</h2>
+              <div class="geo__container">
+
+                <div>
+                  <input type="radio" class="radio__input" id="geo1" name="geo" checked>
+                  <label for="geo1" class="label__radio">Country</label>
+                </div>
+                <div>
+                  <input type="radio" class="radio__input" id="geo2" name="geo">
+                  <label for="geo2" class="label__radio">Country</label>
+                </div>
+              </div>
+            </div>
             <img src="./img/countryPNG.png" alt="Geo graph">
           </article>
         </div>
       </div>
     </main>
   </div>
+  <img src="./img/Ellipse%20209.svg" alt="">
 </body>
 </html>
 
