@@ -14,20 +14,40 @@ body {
   /*фонт-фэмили, фонт-сайз*/
 }
 
-
 h1{
-  margin: 0;
-  font-size: 1.7rem;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-h2{
   margin: 0;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-span{
+h2{
+  margin: 0;
   font-size: 1rem;
+  font-weight: 700;
 }
+
+span{
+  font-size: 0.8rem;
+}
+
+@media (min-width: 576px){
+  h1{
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  h2{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  span{
+    font-size: 1rem;
+  }
+
+}
+
+

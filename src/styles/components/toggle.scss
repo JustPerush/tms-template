@@ -2,6 +2,11 @@
 /*__________________PART OF ASIDE MENU__________________*/
 
 
+@media (min-width: 1024px) {
+  .toggle{
+    margin: 0 12px;
+  }
+}
 
 .toggle__input {
   display: none;
@@ -10,9 +15,13 @@
 .toggle__mark {
   position: relative;
   display: block;
+  margin: 0 12px;
   width: 60px;
   height: 30px;
   background: #FDFDFF;
+  @media (max-width: 992px){
+    background: #4F4F4F;
+  }
   border: 0.5px solid #4F4F4F;
   border-radius: 50px;
   transition: all 1s ease;

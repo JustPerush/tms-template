@@ -1,34 +1,44 @@
 /*__________________ASIDE MENU__________________*/
 
-.page__menu{
-  display: block;
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  border-right: 1px solid #EBEBEB;
-  border-radius: 14px 0 0 14px;
-}
+
+
 
 .menu{
   display: flex;
   align-items: center;
+  @media (min-width: 1024px){
+    flex-direction: column;
+    padding: 50px 0;
+    height: 100%;
+    border-right: 1px solid #EBEBEB;
+    border-radius: 14px 0 0 14px;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+  }
+  flex-direction: row;
   justify-content: space-between;
-  flex-direction: column;
-  padding: 50px 0;
-  height: 100%;
+  height: 98px;
+  @media (max-width:768px) {
+    height: 60px;
+  }
+  background-color: #282C31;
+  background-repeat: no-repeat;
 }
+
 .menu__logo{
   display: block;
+  margin: 0 12px;
   width: 50px;
   height: 35px;
 }
 
-
 .menu__navigation{
   display: flex;
-  flex-direction: column;
+  @media (min-width: 1024px) {
+    flex-direction: column;
+  }
   align-items: center;
   justify-content: space-between;
-
 }
 
 .menu__navigation > a img{
@@ -42,7 +52,10 @@
   color: #DFE6F1;
   font-size: 25px;
   text-decoration: none;
-  margin: 12px 0;
+  @media (min-width: 1024px) {
+    margin: 12px 0;
+  }
+  margin: 0 12px;
 }
 
 .act{
@@ -51,4 +64,47 @@
 
 .menu__icon:hover{
   color:#7F7FD5;
+}
+
+
+.menu-btn{
+  display: none;
+}
+
+.menu .menu-btn:checked ~ .menu__navigation{
+
+  @media (max-width: 768px){
+    display: flex;
+    width: 100%;
+    max-height: 240px;
+    position: absolute;
+    top: 50px;
+    padding: 15px 0;
+    z-index: 3;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu__navigation{
+    display: none;
+  }
+  .toggle{
+    display: none;
+  }
+}
+
+
+@media (max-width:768px) {
+  .menu{
+    position: relative;
+    width: 100%;
+    z-index: 3;
+  }
+
 }

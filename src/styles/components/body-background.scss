@@ -1,11 +1,13 @@
 /*__________________PAGE BACKGROUND__________________*/
 
 
-.body-background{
-  background: url("../../img/union-background_pt1.svg");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  padding: 5vh 10vw;
+@media (min-width: 1300px)  {
+  .body-background {
+    background-image: url("../../img/union-background_pt1.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    padding: 5vh 10vw;
+  }
 }
 
 /*work-in-process*/
